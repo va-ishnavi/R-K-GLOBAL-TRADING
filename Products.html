@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R K GLOBAL TRADING | Import Export Company</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('images/hero bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-gray-50 overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+
+                <div class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="RK Global Trading" class="h-28 w-auto object-contain">
+
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-extrabold text-[#08175C]">
+                            RK GLOBAL TRADING
+                        </h1>
+
+                        <p class="text-[11px] tracking-[5px] text-[#FF6B00] font-semibold">
+                            IMPORT EXPORT
+                        </p>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+                    <a href="home.html" class="hover:text-[#08175C] hover:underline">Home</a>
+                    <a href="About.html" class="hover:text-[#08175C] hover:underline">About</a>
+                    <a href="Products.html" class="hover:text-[#08175C] hover:underline">Products</a>
+                    <a href="Quality.html" class="hover:text-[#08175C] hover:underline">Quality</a>
+                    <a href="Contact.html" class="hover:text-[#08175C] hover:underline">Contact</a>
+                </nav>
+
+                <a href="Contact.html"
+                    class="hidden md:inline-block bg-[#08175C] hover:bg-[#0B247E] text-white px-6 py-3 rounded-full font-semibold transition duration-300">
+                    Get Quote
+                </a>
+
+                <button id="menuBtn" class="md:hidden text-[#08175C] text-3xl">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-4 space-y-4">
+            <a href="home.html" class="block">Home</a>
+            <a href="About.html" class="block">About</a>
+            <a href="Products.html" class="block">Products</a>
+            <a href="Quality.html" class="block">Quality</a>
+            <a href="contact.html" class="block">Contact</a>
+
+    </header>
+
+<!--hero section-->
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+
+    <div class="absolute inset-0">
+        <img src="pdt-img/products-hero.jpg"
+             class="w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-[#08175C]/40"></div>
+    </div>
+
+    <div class="relative z-10 text-center text-white max-w-4xl px-6">
+
+        <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full">
+            Premium Export Products
+        </span>
+
+        <h1 class="text-5xl md:text-7xl font-bold mt-6">
+            Our Product Portfolio
+        </h1>
+
+        <p class="text-xl text-gray-200 mt-6">
+            Delivering Fresh Agricultural Products From India To The World.
+        </p>
+
+    </div>
+
+</section>
+
+<!--Products intro-->
+<style>
+    .product-card{
+    transform-style:preserve-3d;
+    transition:0.6s;
+}
+
+.product-card:hover{
+    transform:
+    rotateY(8deg)
+    rotateX(8deg)
+    translateY(-15px);
+}
+
+.product-card img{
+    transition:.6s;
+}
+
+.product-card:hover img{
+    transform:scale(1.1);
+}
+</style>
+
+<section class="py-20 bg-white">
+
+<div class="max-w-5xl mx-auto text-center px-6">
+
+<h2 class="text-5xl font-bold text-[#08175C]">
+Export Quality Agricultural Products
+</h2>
+
+<p class="mt-6 text-lg text-gray-600 leading-relaxed">
+RK GLOBAL TRADING offers premium agricultural commodities sourced
+from trusted farms and processed under strict quality standards.
+We ensure freshness, purity, and reliable global delivery.
+</p>
+
+</div>
+
+</section>
+
+<!--products cards -->
+<!-- Products Grid -->
+ <section class="py-24 bg-[#08175C]/40">
+    <h2 class="text-center text-5xl font-bold text-[#08175C] mb-16">
+Our Products
+</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Onion -->
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="overflow-hidden">
+            <img src="pdt-img/onion.jpg" alt="Fresh Onion"
+                class="h-72 w-full object-cover">
+        </div>
+
+        <div class="p-8">
+            <h3 class="text-3xl font-bold text-[#08175C]">
+                Fresh Onion
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Premium export-quality onions with excellent shelf life, freshness, and uniform sizing. Carefully selected for international markets.
+            </p>
+        </div>
+    </div>
+
+    <!-- Red Chilli -->
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="overflow-hidden">
+            <img src="pdt-img/red chilli.jpg" alt="Red Chilli"
+                class="h-72 w-full object-cover">
+        </div>
+
+        <div class="p-8">
+            <h3 class="text-3xl font-bold text-[#08175C]">
+                Red Chilli
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Naturally cultivated red chillies known for vibrant color, rich flavor, and high pungency. Ideal for global food industries.
+            </p>
+        </div>
+    </div>
+
+    <!-- Pomegranate -->
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="overflow-hidden">
+            <img src="pdt-img/Pomegranate.jpg" alt="Pomegranate"
+                class="h-72 w-full object-cover">
+        </div>
+
+        <div class="p-8">
+            <h3 class="text-3xl font-bold text-[#08175C]">
+                Pomegranate
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Fresh Indian pomegranates packed with natural sweetness, vibrant color, and superior nutritional value for export markets.
+            </p>
+        </div>
+    </div>
+
+    <!-- Coconut -->
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="overflow-hidden">
+            <img src="pdt-img/Coconut.jpg" alt="Coconut"
+                class="h-72 w-full object-cover">
+        </div>
+
+        <div class="p-8">
+            <h3 class="text-3xl font-bold text-[#08175C]">
+                Coconut
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Export-grade coconuts sourced from quality farms, offering freshness, rich taste, and excellent shelf life.
+            </p>
+        </div>
+    </div>
+
+    <!-- Cumin Seeds -->
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="overflow-hidden">
+            <img src="pdt-img/Cumin Seeds.jpg" alt="Cumin Seeds"
+                class="h-72 w-full object-cover">
+        </div>
+
+        <div class="p-8">
+            <h3 class="text-3xl font-bold text-[#08175C]">
+                Cumin Seeds
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Premium-quality cumin seeds renowned for their rich aroma, strong flavor, and high purity, meeting international standards.
+            </p>
+        </div>
+    </div>
+
+    <!-- Peanuts -->
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="overflow-hidden">
+            <img src="pdt-img/Peanuts.jpg" alt="Peanuts"
+                class="h-72 w-full object-cover">
+        </div>
+
+        <div class="p-8">
+            <h3 class="text-3xl font-bold text-[#08175C]">
+                Peanuts
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                High-quality peanuts with excellent taste, freshness, and nutritional value, suitable for food processing and export.
+            </p>
+        </div>
+    </div>
+
+    <!-- Sesame Seeds -->
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="overflow-hidden">
+            <img src="pdt-img/sesame Seeds.jpg" alt="Sesame Seeds"
+                class="h-72 w-full object-cover">
+        </div>
+
+        <div class="p-8">
+            <h3 class="text-3xl font-bold text-[#08175C]">
+                Sesame Seeds
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Export-quality sesame seeds with high oil content, natural purity, and exceptional quality for food and bakery industries.
+            </p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!--Why our products-->
+<section class="py-24 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+
+        <span class="bg-[#FF6B00]/10 text-[#FF6B00] px-5 py-2 rounded-full font-semibold">
+            Why Choose Us
+        </span>
+
+        <h2 class="text-5xl font-bold text-[#08175C] mt-6">
+            Excellence In Every Shipment
+        </h2>
+
+        <p class="max-w-3xl mx-auto text-gray-600 mt-6 text-lg">
+            We deliver premium agricultural products that meet international quality standards, ensuring reliability, freshness, and customer satisfaction.
+        </p>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Card 1 -->
+        <div class="group bg-gradient-to-b from-white to-[#F8FAFC] p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-4 duration-500 border border-gray-100">
+
+            <div class="w-16 h-16 bg-[#08175C] text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-[#FF6B00] duration-500">
+                🌱
+            </div>
+
+            <h3 class="text-2xl font-bold text-[#08175C] mt-6">
+                Farm Fresh Products
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+                Carefully sourced from trusted farms to ensure freshness and superior quality.
+            </p>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group bg-gradient-to-b from-white to-[#F8FAFC] p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-4 duration-500 border border-gray-100">
+
+            <div class="w-16 h-16 bg-[#08175C] text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-[#FF6B00] duration-500">
+                ⭐
+            </div>
+
+            <h3 class="text-2xl font-bold text-[#08175C] mt-6">
+                Premium Quality
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+                Every product undergoes strict quality inspections before shipment.
+            </p>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group bg-gradient-to-b from-white to-[#F8FAFC] p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-4 duration-500 border border-gray-100">
+
+            <div class="w-16 h-16 bg-[#08175C] text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-[#FF6B00] duration-500">
+                📦
+            </div>
+
+            <h3 class="text-2xl font-bold text-[#08175C] mt-6">
+                Secure Packaging
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+                Export-ready packaging designed to maintain freshness during transit.
+            </p>
+
+        </div>
+
+        <!-- Card 4 -->
+        <div class="group bg-gradient-to-b from-white to-[#F8FAFC] p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-4 duration-500 border border-gray-100">
+
+            <div class="w-16 h-16 bg-[#08175C] text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-[#FF6B00] duration-500">
+                🚢
+            </div>
+
+            <h3 class="text-2xl font-bold text-[#08175C] mt-6">
+                Global Export Network
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+                Reliable logistics and timely delivery to customers across global markets.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!--Exporting packing-->
+
+<section class="py-24 bg-[#08175C]/20 overflow-hidden">
+
+<div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <div class="relative">
+
+            <img src="pdt-img/packaging.jpg"
+                 class="rounded-[30px] shadow-2xl hover:scale-105 duration-500">
+
+            <div class="absolute -bottom-8 -right-8 bg-[#FF6B00] text-white p-8 rounded-3xl shadow-xl">
+                <h3 class="text-4xl font-bold">100%</h3>
+                <p>Quality Checked</p>
+            </div>
+
+        </div>
+
+        <div>
+
+            <span class="bg-[#FF6B00]/10 text-[#FF6B00] px-5 py-2 rounded-full font-semibold">
+                Export Excellence
+            </span>
+
+            <h2 class="text-5xl font-bold text-[#08175C] mt-6">
+                Delivering Freshness Across The Globe
+            </h2>
+
+            <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+                At RK GLOBAL TRADING, every shipment undergoes strict quality
+                inspections and professional packaging to ensure products reach
+                international markets in perfect condition.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6 mt-10">
+
+                <div class="bg-[#F8FAFC] p-6 rounded-2xl hover:shadow-xl duration-300">
+                    <h3 class="text-3xl font-bold text-[#FF6B00]">Premium</h3>
+                    <p class="text-gray-600 mt-2">Product Quality</p>
+                </div>
+
+                <div class="bg-[#F8FAFC] p-6 rounded-2xl hover:shadow-xl duration-300">
+                    <h3 class="text-3xl font-bold text-[#FF6B00]">Secure</h3>
+                    <p class="text-gray-600 mt-2">Export Packaging</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!--products cta-->
+<section class="py-24 bg-[#F8FAFC]">
+
+
+<div class="max-w-6xl mx-auto px-6">
+
+    <div class="bg-gradient-to-r from-[#08175C] to-[#0B247E] rounded-[20px] p-12 md:p-16 text-center text-white shadow-2xl">
+
+        <span class="bg-white/10 px-5 py-2 rounded-full backdrop-blur-md">
+            Premium Agricultural Exports
+        </span>
+
+        <h2 class="text-5xl font-bold mt-8">
+            Ready To Source Quality Products?
+        </h2>
+
+        <p class="text-xl text-gray-200 mt-6 max-w-3xl mx-auto">
+            From Fresh Onion and Red Chilli to Cumin Seeds, Peanuts,
+            Sesame Seeds, Coconut, and Pomegranate — we provide
+            export-quality agricultural products tailored to global markets.
+        </p>
+        <div class="mt-12">
+
+            <a href="Contact.html"
+               class="inline-block bg-[#FF6B00] hover:bg-orange-600 text-white px-10 py-4 rounded-full font-bold transition duration-300 shadow-xl">
+                Request A Quote
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+<!--floating stars-->
+<div class="grid md:grid-cols-3 gap-8 mt-16 mb-10">
+
+<div class="bg-white shadow-xl p-8 rounded-3xl text-center">
+<h3 class="text-5xl font-bold text-[#FF6B00]">7+</h3>
+<p class="mt-3">Export Products</p>
+</div>
+
+<div class="bg-white shadow-xl p-8 rounded-3xl text-center">
+<h3 class="text-5xl font-bold text-[#FF6B00]">100%</h3>
+<p class="mt-3">Quality Checked</p>
+</div>
+
+<div class="bg-white shadow-xl p-8 rounded-3xl text-center">
+<h3 class="text-5xl font-bold text-[#FF6B00]">Global</h3>
+<p class="mt-3">Market Reach</p>
+</div>
+
+</div>
+
+
+
+<!-- Footer -->
+<div class="h-2 bg-gradient-to-r from-[#FF6B00] via-white to-[#08175C]"></div>
+<footer class="bg-[#08175C] text-white py-16">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <!-- Logo -->
+            <img src="images/logo.jpg" alt="RK Global Trading" class="h-24 mx-auto mb-6">
+
+            <!-- Company Name -->
+            <h2 class="text-4xl font-bold mb-4">
+                RK GLOBAL TRADING
+            </h2>
+
+            <!-- Tagline -->
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Delivering Premium Indian Agricultural Products to Global Markets
+                with Quality, Trust and Reliability.
+            </p>
+
+            <!-- Products -->
+            <div class="flex flex-wrap justify-center gap-3 mt-10">
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Onion
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Red Chilli
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Pomegranate
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Coconut
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Cumin Seeds
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Peanut
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Sesame Seeds
+                </span>
+
+
+            </div>
+
+            <!-- Footer Navigation -->
+
+            <div class="flex flex-wrap justify-center gap-8 mt-10 mb-10">
+
+                <a href="home.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    Home
+                </a>
+
+                <a href="About.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    About Us
+                </a>
+
+                <a href="Products.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    Products
+                </a>
+                <a href="Quality.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+
+                    Quality
+                </a>
+
+                <a href="Contact.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    Contact Us
+                </a>
+
+            </div>
+        </div>
+        <!-- Bottom Line -->
+        <div class="border-t border-white/10 mt-8 pt-5">
+
+            <p class="text-gray-400 justify-center flex gap-1 items-center ">
+                © 2026 RK GLOBAL TRADING • All Rights Reserved
+            </p>
+        </div>
+
+</footer>
+
+    <!-- WhatsApp Button -->
+<a href="https://wa.me/917573021111"
+        class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition duration-300">
+        💬
+</a>
+
+<script>
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            })
+        })
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        })
+</script>
+
+</body>
+</html>

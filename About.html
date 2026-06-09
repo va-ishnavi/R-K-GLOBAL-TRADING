@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R K GLOBAL TRADING | Import Export Company</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('images/hero bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-gray-50 overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+
+                <div class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="RK Global Trading" class="h-28 w-auto object-contain">
+
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-extrabold text-[#08175C]">
+                            RK GLOBAL TRADING
+                        </h1>
+
+                        <p class="text-[11px] tracking-[5px] text-[#FF6B00] font-semibold">
+                            IMPORT EXPORT
+                        </p>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+                    <a href="home.html" class="hover:text-[#08175C] hover:underline">Home</a>
+                    <a href="About.html" class="hover:text-[#08175C] hover:underline">About</a>
+                    <a href="Products.html" class="hover:text-[#08175C] hover:underline">Products</a>
+                    <a href="Quality.html" class="hover:text-[#08175C] hover:underline">Quality</a>
+                    <a href="Contact.html" class="hover:text-[#08175C] hover:underline">Contact</a>
+                </nav>
+
+                <a href="Contact.html"
+                    class="hidden md:inline-block bg-[#08175C] hover:bg-[#0B247E] text-white px-6 py-3 rounded-full font-semibold transition duration-300">
+                    Get Quote
+                </a>
+
+                <button id="menuBtn" class="md:hidden text-[#08175C] text-3xl">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-4 space-y-4">
+            <a href="home.html" class="block">Home</a>
+            <a href="About.html" class="block">About</a>
+            <a href="Products.html" class="block">Products</a>
+            <a href="Quality.html" class="block">Quality</a>
+            <a href="contact.html" class="block">Contact</a>
+
+    </header>
+
+    <!--About Hero section-->
+    <section class="relative min-h-[100vh] flex items-center justify-center text-center text-white overflow-hidden">
+
+        <div class="absolute inset-0">
+            <img src="abt-img/about-bg.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-[#08175C]/70"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl px-6">
+
+            <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full">
+                About RK Global Trading
+            </span>
+
+            <h1 class="text-5xl md:text-7xl font-bold mt-6">
+                Connecting Indian Agriculture To Global Markets
+            </h1>
+
+            <p class="mt-6 text-lg text-gray-200">
+                Delivering premium agricultural products with quality,
+                reliability and trust across international markets.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--Who we are-->
+    <section class="py-24 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+                <img src="images/logo.jpg" class="rounded-3xl shadow-2xl hover:scale-105 duration-500">
+            </div>
+
+            <div>
+
+                <span class="text-[#FF6B00] font-semibold">
+                    WHO WE ARE
+                </span>
+
+                <h2 class="text-5xl font-bold text-[#08175C] mt-4">
+                    Your Trusted Export Partner
+                </h2>
+
+                <p class="mt-6 text-gray-600 leading-relaxed">
+                    RK GLOBAL TRADING is a Gujarat-based export company
+                    committed to supplying premium-quality agricultural
+                    products worldwide. We specialize in exporting Fresh
+                    Onion, Red Chilli, Pomegranate, Coconut, Cumin Seeds,
+                    Peanuts and Sesame Seeds while maintaining the highest
+                    quality standards.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Our Mission-->
+    <section class="py-24 bg-[#F8FAFC]">
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+            <div class="bg-white p-10 rounded-3xl shadow-xl hover:-translate-y-3 duration-500">
+
+                <h3 class="text-3xl font-bold text-[#08175C] mb-4">
+                    Our Mission
+                </h3>
+
+                <p class="text-gray-600">
+                    To provide premium agricultural products to international
+                    markets while ensuring quality, transparency, and customer
+                    satisfaction.
+                </p>
+
+            </div>
+
+            <div class="bg-white p-10 rounded-3xl shadow-xl hover:-translate-y-3 duration-500">
+
+                <h3 class="text-3xl font-bold text-[#08175C] mb-4">
+                    Our Vision
+                </h3>
+
+                <p class="text-gray-600">
+                    To become a globally recognized export company known
+                    for reliability, sustainable growth, and excellence in
+                    agricultural trade.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Our Core Values-->
+    <section class="py-24 bg-[#08175C]">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <h2 class="text-center text-5xl font-bold text-white mb-16">
+                Our Core Values
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl hover:bg-[#FF6B00] duration-500">
+                    <h3 class="text-2xl text-white font-bold">Quality</h3>
+                    <p class="text-white/80 mt-4">Maintaining international quality standards.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl hover:bg-[#FF6B00] duration-500">
+                    <h3 class="text-2xl text-white font-bold">Trust</h3>
+                    <p class="text-white/80 mt-4">Building long-term partnerships worldwide.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl hover:bg-[#FF6B00] duration-500">
+                    <h3 class="text-2xl text-white font-bold">Integrity</h3>
+                    <p class="text-white/80 mt-4">Ethical and transparent business practices.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl hover:bg-[#FF6B00] duration-500">
+                    <h3 class="text-2xl text-white font-bold">Commitment</h3>
+                    <p class="text-white/80 mt-4">Timely delivery and customer satisfaction.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--testimoinal-->
+    <section class="py-24 bg-white">
+
+        <h2 class="text-center text-5xl font-bold text-[#08175C] mb-16">
+            What Clients Say
+        </h2>
+
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+            <div class="bg-white shadow-xl p-8 rounded-3xl hover:-translate-y-2 duration-500">
+                ⭐⭐⭐⭐⭐
+                <p class="mt-4 text-gray-600">
+                    Excellent product quality and professional export support.
+                </p>
+                <h4 class="mt-4 font-bold">Buyer - UAE</h4>
+            </div>
+
+            <div class="bg-white shadow-xl p-8 rounded-3xl hover:-translate-y-2 duration-500">
+                ⭐⭐⭐⭐⭐
+                <p class="mt-4 text-gray-600">
+                    Reliable shipments and outstanding customer service.
+                </p>
+                <h4 class="mt-4 font-bold">Importer - Malaysia</h4>
+            </div>
+
+            <div class="bg-white shadow-xl p-8 rounded-3xl hover:-translate-y-2 duration-500">
+                ⭐⭐⭐⭐⭐
+                <p class="mt-4 text-gray-600">
+                    Consistent quality products and timely delivery.
+                </p>
+                <h4 class="mt-4 font-bold">Distributor - Saudi Arabia</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Explore Products CTA-->
+    <section class="py-24 bg-gradient-to-r from-[#08175C] via-[#0B247E] to-[#08175C] text-white overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full text-sm">
+                    Our Product Range
+                </span>
+
+                <h2 class="text-5xl font-bold mt-6">
+                    Premium Agricultural Products
+                </h2>
+
+                <p class="max-w-3xl mx-auto mt-6 text-gray-200 text-lg">
+                    We supply high-quality agricultural commodities sourced from trusted farms across India and exported
+                    to international markets with strict quality standards.
+                </p>
+
+            </div>
+
+            <!-- Product Tags -->
+
+            <div class="flex flex-wrap justify-center gap-4">
+
+                <span class="bg-white/10 hover:bg-[#FF6B00] px-6 py-3 rounded-full transition duration-500">
+                    🧅 Fresh Onion
+                </span>
+
+                <span class="bg-white/10 hover:bg-[#FF6B00] px-6 py-3 rounded-full transition duration-500">
+                    🌶️ Red Chilli
+                </span>
+
+                <span class="bg-white/10 hover:bg-[#FF6B00] px-6 py-3 rounded-full transition duration-500">
+                    🍎 Pomegranate
+                </span>
+
+                <span class="bg-white/10 hover:bg-[#FF6B00] px-6 py-3 rounded-full transition duration-500">
+                    🥥 Coconut
+                </span>
+
+                <span class="bg-white/10 hover:bg-[#FF6B00] px-6 py-3 rounded-full transition duration-500">
+                    🌿 Cumin Seeds
+                </span>
+
+                <span class="bg-white/10 hover:bg-[#FF6B00] px-6 py-3 rounded-full transition duration-500">
+                    🥜 Peanuts
+                </span>
+
+                <span class="bg-white/10 hover:bg-[#FF6B00] px-6 py-3 rounded-full transition duration-500">
+                    ⚪ Sesame Seeds
+                </span>
+
+            </div>
+
+            <!-- CTA -->
+
+            <div class="text-center mt-12">
+
+                <a href="products.html"
+                    class="inline-flex items-center gap-3 bg-[#FF6B00] hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold transition duration-300 shadow-xl">
+
+                    Explore Full Product Range →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Connect With Us CTA-->
+    <section class="py-24 bg-[#F8FAFC] relative overflow-hidden">
+
+        <!-- Background Shape -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#FF6B00]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-[#08175C]/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+
+            <div class="bg-white rounded-[40px] shadow-2xl p-12 md:p-16 text-center">
+
+                <span class="bg-[#FF6B00]/10 text-[#FF6B00] px-5 py-2 rounded-full font-semibold">
+                    Get In Touch
+                </span>
+
+                <h2 class="text-4xl md:text-6xl font-bold text-[#08175C] mt-6">
+                    Ready To Grow Your Business?
+                </h2>
+
+                <p class="text-gray-600 text-lg mt-6 max-w-3xl mx-auto leading-relaxed">
+                    Partner with RK GLOBAL TRADING for premium agricultural products,
+                    reliable export services, and long-term business relationships built on trust and quality.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-5 mt-10">
+
+                    <a href="Contact.html"
+                        class="bg-[#FF6B00] hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-lg">
+                        Contact Us
+                    </a>
+
+                    <a href="Products.html"
+                        class="border-2 border-[#08175C] text-[#08175C] hover:bg-[#08175C] hover:text-white px-8 py-4 rounded-full font-semibold transition duration-300">
+                        View Products
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="h-2 bg-gradient-to-r from-[#FF6B00] via-white to-[#08175C]"></div>
+    <footer class="bg-[#08175C] text-white py-16">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <!-- Logo -->
+            <img src="images/logo.jpg" alt="RK Global Trading" class="h-24 mx-auto mb-6">
+
+            <!-- Company Name -->
+            <h2 class="text-4xl font-bold mb-4">
+                RK GLOBAL TRADING
+            </h2>
+
+            <!-- Tagline -->
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Delivering Premium Indian Agricultural Products to Global Markets
+                with Quality, Trust and Reliability.
+            </p>
+
+            <!-- Products -->
+            <div class="flex flex-wrap justify-center gap-3 mt-10">
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Onion
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Red Chilli
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Pomegranate
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Coconut
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Cumin Seeds
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Peanut
+                </span>
+
+                <span class="bg-white/10 px-5 py-2 rounded-full">
+                    Sesame Seeds
+                </span>
+
+
+            </div>
+
+            <!-- Footer Navigation -->
+
+            <div class="flex flex-wrap justify-center gap-8 mt-10 mb-10">
+
+                <a href="home.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    Home
+                </a>
+
+                <a href="About.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    About Us
+                </a>
+
+                <a href="Products.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    Products
+                </a>
+                <a href="Quality.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+
+                    Quality
+                </a>
+
+                <a href="Contact.html" class="text-gray-300 hover:text-[#FF6B00] transition duration-300 font-medium">
+                    Contact Us
+                </a>
+
+            </div>
+        </div>
+        <!-- Bottom Line -->
+        <div class="border-t border-white/10 mt-8 pt-5">
+
+            <p class="text-gray-400 justify-center flex gap-1 items-center ">
+                © 2026 RK GLOBAL TRADING • All Rights Reserved
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917573021111"
+        class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition duration-300">
+        💬
+    </a>
+
+    <script>
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            })
+        })
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        })
+    </script>
+
+</body>
+</html>
